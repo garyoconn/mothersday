@@ -26,23 +26,16 @@ body {
   transform: translateX(-50%) translateY(-50%);
   font-family: "Montserrat";
   text-align: center;
-  width: 50%;
+  width: 70%;
 }
-h1 {
-  position: relative;
-  color: #000000;
-  font-weight: 300;
-  font-size: 46px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-}
+
 h2 {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 50px;
   padding: 0;
   margin: 0;
   line-height: 1;
+  font-family: "Playfair Display", serif;
 }
 h3 {
   font-weight: 200;
@@ -52,6 +45,7 @@ h3 {
   line-height: 2;
   color: #5e7283;
   letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
 }
 svg {
   display: block;
