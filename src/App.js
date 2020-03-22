@@ -10,9 +10,9 @@ class Particle {
     this.coordinates = coordinates;
     this.position = this.coordinates.y;
     this.dimensions = this.render();
-    this.rotation = Math.random() > 0.3 ? "-" : "+";
-    this.scale = 1.3 + Math.random();
-    this.siner = 150 * Math.random();
+    this.rotation = Math.random() > 0.5 ? "-" : "+";
+    this.scale = 0.5 + Math.random();
+    this.siner = 20 * Math.random();
   }
 
   destroy() {
@@ -58,7 +58,7 @@ class Particle {
           "px)"
       }
     });
-    $("body").append(this.item);
+    $(".background").append(this.item);
     return {
       width: this.item.width(),
       height: this.item.height()
@@ -122,19 +122,18 @@ class App extends React.Component {
   componentDidMount() {
     update();
     const titles = [
-      "mother",
-      "mentor",
       "mammy",
+      "mentor",
+      "cook",
       "teacher",
-      "mam",
+      "helper",
       "hero",
-      "mum",
-      "friend",
-      "ma"
+      "taxi-driver",
+      "friend"
     ];
     let i = 0;
     this.interval = setInterval(() => {
-      if (i === 8) i = -1;
+      if (i === 7) i = -1;
       this.setState({ title: titles[++i] });
     }, 1000);
   }
